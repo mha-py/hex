@@ -1,0 +1,55 @@
+<html>
+
+
+<script type="text/javascript">
+var count=0;
+document.addEventListener('DOMContentLoaded', function() {
+  var count=0;
+  var svg = document.querySelector('svg');
+})
+
+
+function message(text) {
+  alert(text+count);
+
+  /*
+  svg.appendChild(getNode('bla', {
+    id: 'ellipse1'+count,
+    cx: 150,
+    cy: 150,
+    rx: 30
+    ry: 20
+    fill: "black"
+  }));
+  count++;*/
+}
+function getNode(elem, v) {
+  elem = document.createElementNS("http://www.w3.org/2000/svg", elem);
+  for (var p in v)
+    elem.setAttribute(p, v[p]);
+  return elem;
+}
+</script>
+
+
+<body bgcolor="black" textcolor="white">
+<svg width="200px" height="100px" viewBox="0 0 500 400">
+  <circle cx=200 cy=200 r=80 fill="white" onclick="message('Hi!')" />
+  <path d=
+   "M 212.4 254.824595
+  L 180 236.118446
+  L 147.6 254.824595
+  L 147.6 292.236892
+  L 180 310.943041
+  L 212.4 292.236892
+  " style="fill:#990000;"/>
+</svg>
+
+</body>
+</html>
+
+990000
+000dd9
+333333
+
+Meilenstein: Graue Felder positionieren im trapez
